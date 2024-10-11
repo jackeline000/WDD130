@@ -2,6 +2,18 @@ body {
     background-color:#E8C8EA;
     font-family:Arial, Helvetica, sans-serif
 }
+#content {
+    background: color #e8e8e8;;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav, footer {
+    background-color: pink;
+    text-align: nav;
+    display: flex;
+    justify-content: space-around;
+}
 
 a {
     color: #000;
@@ -9,6 +21,26 @@ a {
     padding: 25px;
     font-family:Arial, Helvetica, sans-serif
 }
+main a {
+    color:#000;
+    font-size:1em
+
+}
+#active {
+    background-color: beige;
+    color: pink;
+}
+h1{
+    text-align: center;
+}
 img{
-    width: 300px;
+    width: 30%;
+    margin: 0 auto;
+    display:block;
 }  
+
+p {
+    width: 70%;
+
+    margin: 0 auto;
+}
