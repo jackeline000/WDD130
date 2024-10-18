@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Kalam:wght@300;400;700&family=Merienda:wght@300..900&display=swap');
+
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -6,15 +9,26 @@
 #hero-img{
     width: 100%;
 }
+#logo_link{
+    padding-top: 5px;
+}
 .icon{
     width: 80px;
+    padding-top: 10px;
 }
 .logo{
     width: 80px;
 }
 
 body{
-    background-color:rgb(228, 228, 205); 
+    background-color:rgb(228, 228, 205);
+    font-family: Acme, Kalam, Merienda;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    margin: 0;
 }
 header {
     background-color:white;
@@ -23,6 +37,7 @@ nav a{
     text-align: center;
     color: rgb(255, 159, 28);
     text-decoration: none;
+    padding: 35px;
 }
 #hero-msg h1, #hero-msg h4{
     text-align: center;
@@ -40,6 +55,9 @@ nav a:hover{
 }
 .home-title{
     color: black;
+    font-family: Merienda;
+    font-size: 2em;
+    margin-top: 10px;
 }
 h4{
     color: black;
@@ -48,27 +66,54 @@ h4{
     background-color:rgb(123, 123, 114);
     color: #ffffff;
     text-decoration: none;
+    font-family: Kalam;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin: 50px;
+    border-radius: 5px;
+
+}
+.card-img{
+    border: 10px solid rgb(179, 179, 163);
+}
+main section img{
+    box-sizing: border-box;
 }
 .book:hover, .join:hover{
     background-color:rgb(123, 123, 114);
     color: rgb(103, 15, 103);
+}
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
 }
 .msg h2{
     color: black;
 }
 .msg p{
     color: black;
+    font-family: 'Merienda';
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 #background {
     height: 700px;
     background-color:rgb(188, 188, 171);
+    margin-bottom: 200px;
 }
 .msg{
     background-color:rgb(211, 211, 201);
+    line-height: 1.5em;
+    padding: 35px;
+    margin-top: 200px;
 }
 footer{
     background-color:#ffffff;
     color: rgb(128, 128, 128);
+    padding: 25px 50px;
+    margin-top:200px;
+}
+footer .social img{
+    padding-top: 15px;
 }
 footer a{
     color: rgb(128, 128, 128);
