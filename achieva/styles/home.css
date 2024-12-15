@@ -233,7 +233,7 @@ video{
     top: 50%;
     left: 30%;
     transform: translate(-50%, -60%);
-    width: 300px;
+    width: 400px;
     height: auto;
     object-fit: contain;
     z-index: -1;
@@ -258,8 +258,8 @@ video{
 .features-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
-    max-width: 1200px;
+    gap: 70px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 40px 20px;
 }
