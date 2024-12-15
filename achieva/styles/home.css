@@ -104,6 +104,7 @@ video{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     padding: 30px;
     margin-bottom: 60px;
+    text-align: center;
 
 }
 
@@ -139,7 +140,7 @@ video{
 }
 
 .pricing-title {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 20px;
 }
 
@@ -216,7 +217,7 @@ video{
     background: #2a0b3d;
 }
 
-/*Features*/
+/* Features */
 .features-main {
     padding-top: 150px;
 }
@@ -229,27 +230,27 @@ video{
 
 .background-image {
     position: absolute;
-    top: 50%; 
-    left: 30%; 
-    transform: translate(-50%, -60%); 
-    width: 300px; 
-    height: auto; 
-    object-fit: contain; 
-    z-index: -1; 
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -60%);
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+    z-index: -1;
 }
 
 #features-msg {
-    position: relative; 
+    position: relative;
     z-index: 1;
 }
 
 .features-title {
-    font-size: 3.5rem;
+    font-size: 4rem;
     margin-bottom: 20px;
 }
 
 .sub-title3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -264,21 +265,57 @@ video{
 }
 
 .feature-item {
-    background-color: rgba(225, 224, 224, 0.9);
-    padding: 40px;
+    height: 300px; 
+}
+
+/* Flip Card */
+.flip-card {
+    perspective: 1000px;
+    height: 100%;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.9s;
+    transform-style: preserve-3d;
+
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
     border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-card-front {
+    background-color: rgba(225, 224, 224, 0.9);
     color: #13051d;
-    min-height: 300px;
+    font-size: 1.6em;
 }
 
-.feature-item h4 {
-    font-size: 1.9rem;
-    margin-bottom: 20px;
+.flip-card-back {
+    background-color: #1d072f;
+    color: white;
+    transform: rotateY(180deg);
 }
 
-.sub-description {
-    font-size: 1.3rem;
-    line-height: 1.6;
+.flip-card-back p {
+    margin: auto;
+    font-size: 1.1em;
 }
 
 .features-image {
@@ -290,7 +327,6 @@ video{
     max-width: 100%;
     height: auto;
     margin: 10px;
-
 }
 
 /* Footer */
@@ -327,6 +363,10 @@ video{
 .footer-logo p {
     font-size: 1.5rem;
     margin: 0;
+}
+.footer-links a::after,
+.footer-social a::after {
+    display: none;
 }
 
 .footer-links {
